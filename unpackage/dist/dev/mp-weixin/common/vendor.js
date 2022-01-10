@@ -941,7 +941,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -7641,7 +7641,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7662,14 +7662,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7755,7 +7755,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"shicai","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -8628,9 +8628,9 @@ function resolveLocaleChain(locale) {
 
 /***/ }),
 /* 5 */
-/*!********************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/pages.json ***!
-  \********************************************************/
+/*!*******************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/pages.json ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9564,14 +9564,159 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 21 */
-/*!***********************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/static/images/2020033.jpg ***!
-  \***********************************************************************/
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */
+/*!**********************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/static/images/2020033.jpg ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = "/static/images/2020033.jpg";
+
+/***/ }),
+/* 29 */
+/*!***************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/static/js/index.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.module = void 0;var _module = [{
+  tabName: '人气推荐',
+  tabs1: ['中远石业', '联发石业', '欧式石业', '奥都石材', '永成石材', '中远石业'],
+  tabs2: ['PLUS', '蓝金沙', '黑金沙', '埃及米黄', 'PLUS', '蓝金沙'],
+  actice1: 0,
+  actice2: 0,
+  list: [{
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 }] },
+
+{
+  tabName: '超赞商家',
+  tabs1: ['中远石业', '联发石业', '欧式石业', '奥都石材', '永成石材', '中远石业'],
+  tabs2: ['PLUS', '蓝金沙', '黑金沙', '埃及米黄', 'PLUS', '蓝金沙'],
+  actice1: 0,
+  actice2: 0,
+  list: [{
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 }] },
+
+{
+  tabName: '热门商家',
+  tabs1: ['中远石业', '联发石业', '欧式石业', '奥都石材', '永成石材', '中远石业'],
+  tabs2: ['PLUS', '蓝金沙', '黑金沙', '埃及米黄', 'PLUS', '蓝金沙'],
+  actice1: 0,
+  actice2: 0,
+  list: [{
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 },
+  {
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    shopName: '中远石业',
+    tradeName: '蓝金沙KK0109-3',
+    price: 114 }] }];exports.module = _module;
 
 /***/ })
 ]]);

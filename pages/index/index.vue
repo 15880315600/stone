@@ -15,57 +15,58 @@
 				</view>
 			</view>
 		</view>
-		<view class="tabs_main">
+		<view class="tabs_main" v-for="(item,index) in moduleList" :key="index">
 			<view :class="[{fixedTop:hightTop},'todaysDeal']">
 				<view class="customNavigation" :style="{ paddingTop: top+ 'px',lineHeight: height+ 'px'  }"
 					v-if="hightTop">
 					S石材推荐
 				</view>
 				<view class="tabs">
-					<view class="one_tabs no-scrollbar" :style="{marginTop:(hightTop ? '20rpx' : '')}">
-						<view class="one_tab_item" :style="{fontWeight: actice1 == index ? 600 : ''}"
-							v-for="(item,index) in tabs1" :key="index" @click="actice1 = index">
-							{{ item }}
+					<view class="one_tabs no-scrollbar" v-if="index == 0" :style="{marginTop:(hightTop ? '20rpx' : '')}">
+						<view class="one_tab_item" :style="{fontWeight: actice == key ? 600 : ''}"
+							v-for="(iten,key) in moduleList" :key="key" @click="actice = key">
+							{{ iten.tabName }}
 						</view>
 						<view class="underline"
-							:style="{ left: (actice1 === 0 ? actice1*150 :  actice1*(150+120)) + 'rpx'  }">
+							:style="{ left: (actice === 0 ? actice*150 :  actice*(150+120)) + 'rpx'  }">
 						</view>
 					</view>
 					<view class="small_banner" v-if="!hightTop">
 						<image src="../../static/images/small_banner.png" mode=""></image>
 					</view>
 					<view class="two_tabs no-scrollbar">
-						<view :class="[{actice:actice2 == index},'two_tab_item']" v-for="(item,index) in tabs2"
-							:key="index" @click="actice2 = index">
-							{{ item }}
+						<view :class="[{actice:item.actice1 == index1},'two_tab_item']" v-for="(item1,index1) in item.tabs1"
+							:key="index1" @click="item.actice1 = index1">
+							{{ item1 }}
 						</view>
 					</view>
 					<view class="three_tabs no-scrollbar" :style="{paddingBottom:(hightTop ? '20rpx' : '')}">
-						<view :class="[{actice:actice3 == index},'three_tab_item']" v-for="(item,index) in tabs3"
-							:key="index" @click="actice3 = index">
-							{{ item }}
+						<view :class="[{actice:item.actice2 == index2},'three_tab_item']" v-for="(item2,index2) in item.tabs2"
+							:key="index2" @click="item.actice2 = index2">
+							{{ item2 }}
+						</view>
+					</view>
+				</view>
+				<view class="main_items">
+					<view class="item" v-for="(item,index) in item.list" :key="index">
+						<image :src="item.imgUrl" class="items_main_img" mode=""></image>
+						<view class="item_body">
+							<view class="describe">
+								<image :src="item.profile" class="portrait" mode=""></image>
+								<view class="name">
+									<view class="shopName">{{ item.shopName }}</view>
+									<view class="tradeName">{{ item.tradeName }}</view>
+								</view>
+							</view>
+							<view class="price">
+								¥{{ item.price }}
+							</view>
 						</view>
 					</view>
 				</view>
 			</view>
 
-			<view class="main_items">
-				<view class="item" v-for="(item,index) in list" :key="index">
-					<image :src="item.imgUrl" class="items_main_img" mode=""></image>
-					<view class="item_body">
-						<view class="describe">
-							<image :src="item.profile" class="portrait" mode=""></image>
-							<view class="name">
-								<view class="shopName">{{ item.shopName }}</view>
-								<view class="tradeName">{{ item.tradeName }}</view>
-							</view>
-						</view>
-						<view class="price">
-							¥{{ item.price }}
-						</view>
-					</view>
-				</view>
-			</view>
+			
 		</view>
 		<view class="contact_we" @click="freeTell">
 			<image src="../../static/images/contact.png" mode=""></image>
@@ -74,6 +75,7 @@
 </template>
 
 <script>
+	import {module} from '../../static/js/index.js'
 	export default {
 		data() {
 			return {
@@ -82,169 +84,8 @@
 					'二、天然石材大体分为花岗岩、板岩、砂岩、石灰岩、火山岩等，随着科技的不断发展和进步，人造石的产品也不断日新月异石材早已经成为建筑、装饰、道路、桥梁建设的重要原料之一。'
 				],
 				aboutClosed: true,
-				tabs1: ['人气推荐', '超赞商家', '热门商家', '人气推荐', '超赞商家', '热门商家'],
-				actice1: 0,
-				tabs2: ['中远石业', '联发石业', '欧式石业', '奥都石材', '永成石材', '中远石业'],
-				actice2: 0,
-				tabs3: ['PLUS', '蓝金沙', '黑金沙', '埃及米黄', 'PLUS', '蓝金沙'],
-				actice3: 0,
-				list: [{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					}, {
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					}, {
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					}, {
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					}, {
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					}, {
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					},
-					{
-						imgUrl: require('../../static/images/2020033.jpg'),
-						profile: require('../../static/images/2020033.jpg'),
-						shopName: '中远石业',
-						tradeName: '蓝金沙KK0109-3',
-						price: 114
-					}
-				],
+				moduleList:[],
+				actice: 0,
 				wmssjH: 0,
 				hightTop: false,
 				height: 0,
@@ -254,16 +95,18 @@
 		async onReachBottom() {
 			console.log("onReachBottom");
 		},
-		onLoad() {},
+		onLoad() {
+			this.moduleList = module
+		},
 		onPageScroll: function(e) { //监听页面滚动
-			let that = this
-			//判断你滑动的高度大于你元素距离顶部的高度值
-			if (that.wmssjH < e.scrollTop) {
-				//固定
-				that.hightTop = true
-			} else {
-				that.hightTop = false
-			}
+			// let that = this
+			// //判断你滑动的高度大于你元素距离顶部的高度值
+			// if (that.wmssjH < e.scrollTop) {
+			// 	//固定
+			// 	that.hightTop = true
+			// } else {
+			// 	that.hightTop = false
+			// }
 		},
 		onReady() {
 			let menuRect = wx.getMenuButtonBoundingClientRect()

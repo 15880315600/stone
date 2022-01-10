@@ -12,9 +12,9 @@
 /* 10 */,
 /* 11 */,
 /* 12 */
-/*!**************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \**************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27,9 +27,9 @@ createPage(_index.default);
 
 /***/ }),
 /* 13 */
-/*!*******************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/pages/index/index.vue ***!
-  \*******************************************************************/
+/*!******************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/pages/index/index.vue ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -69,9 +69,9 @@ component.options.__file = "pages/index/index.vue"
 
 /***/ }),
 /* 14 */
-/*!**************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
-  \**************************************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
+  \*************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -90,9 +90,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 15 */
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=template&id=57280228&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -116,34 +116,36 @@ var render = function() {
       _vm.aboutClosed = false
     }
 
-    _vm.e2 = function($event, index) {
+    _vm.e2 = function($event, key) {
       var _temp = arguments[arguments.length - 1].currentTarget.dataset,
         _temp2 = _temp.eventParams || _temp["event-params"],
-        index = _temp2.index
+        key = _temp2.key
 
       var _temp, _temp2
 
-      _vm.actice1 = index
+      _vm.actice = key
     }
 
-    _vm.e3 = function($event, index) {
+    _vm.e3 = function($event, item, index1) {
       var _temp3 = arguments[arguments.length - 1].currentTarget.dataset,
         _temp4 = _temp3.eventParams || _temp3["event-params"],
-        index = _temp4.index
+        item = _temp4.item,
+        index1 = _temp4.index1
 
       var _temp3, _temp4
 
-      _vm.actice2 = index
+      item.actice1 = index1
     }
 
-    _vm.e4 = function($event, index) {
+    _vm.e4 = function($event, item, index2) {
       var _temp5 = arguments[arguments.length - 1].currentTarget.dataset,
         _temp6 = _temp5.eventParams || _temp5["event-params"],
-        index = _temp6.index
+        item = _temp6.item,
+        index2 = _temp6.index2
 
       var _temp5, _temp6
 
-      _vm.actice3 = index
+      item.actice2 = index2
     }
   }
 }
@@ -155,9 +157,9 @@ render._withStripped = true
 
 /***/ }),
 /* 16 */
-/*!********************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -170,89 +172,91 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 17 */
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 18));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _index = __webpack_require__(/*! ../../static/js/index.js */ 29);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var _default =
 {
   data: function data() {
     return {
@@ -261,169 +265,8 @@ var _default =
       '二、天然石材大体分为花岗岩、板岩、砂岩、石灰岩、火山岩等，随着科技的不断发展和进步，人造石的产品也不断日新月异石材早已经成为建筑、装饰、道路、桥梁建设的重要原料之一。'],
 
       aboutClosed: true,
-      tabs1: ['人气推荐', '超赞商家', '热门商家', '人气推荐', '超赞商家', '热门商家'],
-      actice1: 0,
-      tabs2: ['中远石业', '联发石业', '欧式石业', '奥都石材', '永成石材', '中远石业'],
-      actice2: 0,
-      tabs3: ['PLUS', '蓝金沙', '黑金沙', '埃及米黄', 'PLUS', '蓝金沙'],
-      actice3: 0,
-      list: [{
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 },
-
-      {
-        imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 21),
-        shopName: '中远石业',
-        tradeName: '蓝金沙KK0109-3',
-        price: 114 }],
-
-
+      moduleList: [],
+      actice: 0,
       wmssjH: 0,
       hightTop: false,
       height: 0,
@@ -433,16 +276,18 @@ var _default =
   onReachBottom: function onReachBottom() {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
               console.log("onReachBottom");case 1:case "end":return _context.stop();}}}, _callee);}))();
   },
-  onLoad: function onLoad() {},
+  onLoad: function onLoad() {
+    this.moduleList = _index.module;
+  },
   onPageScroll: function onPageScroll(e) {//监听页面滚动
-    var that = this;
-    //判断你滑动的高度大于你元素距离顶部的高度值
-    if (that.wmssjH < e.scrollTop) {
-      //固定
-      that.hightTop = true;
-    } else {
-      that.hightTop = false;
-    }
+    // let that = this
+    // //判断你滑动的高度大于你元素距离顶部的高度值
+    // if (that.wmssjH < e.scrollTop) {
+    // 	//固定
+    // 	that.hightTop = true
+    // } else {
+    // 	that.hightTop = false
+    // }
   },
   onReady: function onReady() {var _this = this;
     var menuRect = wx.getMenuButtonBoundingClientRect();
@@ -469,9 +314,9 @@ var _default =
 /* 20 */,
 /* 21 */,
 /* 22 */
-/*!****************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
-  \****************************************************************************************************/
+/*!***************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -484,9 +329,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 23 */
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -496,9 +341,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 24 */
-/*!*****************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=style&index=1&id=57280228&lang=scss&scoped=true& ***!
-  \*****************************************************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=style&index=1&id=57280228&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -511,9 +356,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 /* 25 */
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/shicai/pages/index/index.vue?vue&type=style&index=1&id=57280228&lang=scss&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/stone/pages/index/index.vue?vue&type=style&index=1&id=57280228&lang=scss&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
