@@ -9564,24 +9564,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */
-/*!**********************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/stone/static/images/2020033.jpg ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/static/images/2020033.jpg";
-
-/***/ }),
-/* 29 */
+/* 21 */
 /*!***************************************************************!*\
   !*** C:/Users/Administrator/Desktop/stone/static/js/index.js ***!
   \***************************************************************/
@@ -9596,38 +9579,38 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.module = v
   actice1: 0,
   actice2: 0,
   list: [{
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 }] },
@@ -9639,38 +9622,38 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.module = v
   actice1: 0,
   actice2: 0,
   list: [{
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 }] },
@@ -9682,41 +9665,51 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.module = v
   actice1: 0,
   actice2: 0,
   list: [{
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 },
   {
-    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
-    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 28),
+    imgUrl: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
+    profile: __webpack_require__(/*! ../../static/images/2020033.jpg */ 22),
     shopName: '中远石业',
     tradeName: '蓝金沙KK0109-3',
     price: 114 }] }];exports.module = _module;
+
+/***/ }),
+/* 22 */
+/*!**********************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/stone/static/images/2020033.jpg ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/static/images/2020033.jpg";
 
 /***/ })
 ]]);
