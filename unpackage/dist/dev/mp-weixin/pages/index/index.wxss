@@ -87,11 +87,11 @@ page {
 }
 .content .todaysDeal .one_tabs.data-v-57280228 {
   position: relative;
-  width: 704rpx;
   overflow-x: auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 46rpx;
+  padding: 0 46rpx;
 }
 .content .todaysDeal .one_tabs .one_tab_item.data-v-57280228 {
   padding: 22rpx 0;
@@ -313,12 +313,15 @@ page {
   letter-spacing: 1rpx;
 }
 .content .more.data-v-57280228 {
+  padding-bottom: 72rpx;
+}
+.content .more .moreBtn.data-v-57280228 {
   width: 658rpx;
   height: 96rpx;
   line-height: 96rpx;
   border-radius: 16rpx;
   border: 2rpx solid #FFFFFF;
-  margin: 0 auto 72rpx;
+  margin: 0 auto;
   text-align: center;
 }
 .content .contact_we.data-v-57280228 {

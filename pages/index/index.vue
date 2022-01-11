@@ -29,7 +29,8 @@
 					v-for="(iten,key) in moduleList" :key="key" @click="tabOneClick(iten,key)">
 					{{ iten.tabName }}
 				</view>
-				<view class="underline" :style="{ left: (actice === 0 ? actice*150 :  actice*(150+120)) + 'rpx'  }">
+				<view class="underline"
+					:style="{ left: (actice === 0 ? actice*150 + 46 :  actice*(150+120) +46) + 'rpx'  }">
 				</view>
 			</view>
 			<view class="tabs">
@@ -99,7 +100,7 @@
 			</view>
 		</view>
 		<!-- 页面一级菜单 -->
-		
+
 		<view class="tabs_main" v-for="(item,index) in moduleList" :key="index">
 			<!-- 页面二三级菜单 -->
 			<view class="tabs">
@@ -140,7 +141,9 @@
 			</view>
 			<!-- 列表 -->
 			<view class="more">
-				查看更多石材
+				<view class="moreBtn">
+					查看更多石材
+				</view>
 			</view>
 
 		</view>
@@ -351,11 +354,11 @@
 
 			.one_tabs {
 				position: relative;
-				width: 704rpx;
 				overflow-x: auto;
 				display: flex;
+				justify-content: space-between;
 				align-items: center;
-				margin-left: 46rpx;
+				padding: 0 46rpx;
 
 				.one_tab_item {
 					padding: 22rpx 0;
@@ -622,13 +625,17 @@
 		}
 
 		.more {
-			width: 658rpx;
-			height: 96rpx;
-			line-height: 96rpx;
-			border-radius: 16rpx;
-			border: 2rpx solid #FFFFFF;
-			margin: 0 auto 72rpx;
-			text-align: center;
+			padding-bottom: 72rpx;
+
+			.moreBtn {
+				width: 658rpx;
+				height: 96rpx;
+				line-height: 96rpx;
+				border-radius: 16rpx;
+				border: 2rpx solid #FFFFFF;
+				margin: 0 auto;
+				text-align: center;
+			}
 		}
 
 		.contact_we {

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "navigationStyle": "custom",
+  "onReachBottonDistance": 50,
+  "usingComponents": {}
+}
